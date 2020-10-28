@@ -6,7 +6,7 @@ namespace Day1_N
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
