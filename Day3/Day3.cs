@@ -35,6 +35,10 @@ namespace Day3
 
         static void Task3_3()
         {
+            //Deklarēt programmā bool tipa mainīgo, kura sākotnējā vērtība ir TRUE.
+            //Izveidot while ciklu, kurš atkārtojas tik ilgi, kamēr mainīgā vērtība ir TRUE.
+            //Mainīgā vērtību uz FALSE ir jānomaina, tad, kad cikls ir atkārtojies 20 reizes.
+
             bool a = true;
             Console.WriteLine(a);
             int i = 0;
@@ -52,7 +56,8 @@ namespace Day3
         {
             Console.WriteLine("Cik reizes vēlies atkārtot `Hello world`?");
             int x = Convert.ToInt32(Console.ReadLine());
-            for ( int i = 0; i < x ; i++ )
+
+            for ( int i = 1; i <= x ; i++ )
             {
                 Console.WriteLine("Hello world!");
             }
@@ -60,6 +65,8 @@ namespace Day3
 
         static void Task3_5()
         {
+            //Izdrukāt uz ekrāna pirmā un pēdējā elementa vērtības.
+
             int[] array = { 100, 200, 233, 66, 77, 98 };
             Console.WriteLine(array[0]);
             Console.WriteLine(array[array.Length-1]);
@@ -67,6 +74,8 @@ namespace Day3
 
         static void Task3_6()
         {
+            //Samainīt elementu, kura sākotnējā vērtība ir 3 uz 10.
+
             int[] array = { 7, 4, 7, 3, 6, 9, 2 };            
             Console.WriteLine(String.Join(",", array));
             for ( int i=0; i<array.Length; i++)
@@ -105,7 +114,7 @@ namespace Day3
         {
             var a = (WeekDays) 4;
             Console.WriteLine(a);
-
+            
         }
 
             
@@ -116,32 +125,36 @@ namespace Day3
         static void Task3_9()
         {
             // nav pabeigts
+
+
             Console.WriteLine("Reizrēķina tabulai ievadi pozitīvu skaitli, ne lielāku par 20");
             int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("--------------------");
+
             while ( x < 0 || x > 20)
             {
                 Console.WriteLine("Nekorekts skaitlis. Ievadi pozitīvu skaitli, ne lielāku par 20");
                 x = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("--------------------");
 
             }
             int a = 1;
             int b = 1;
-            while ( a <= x)
+            while ( a < x)
             {
                              
-                while (b <= x)
+                while ( b <= x )
                 {
                     Console.Write(a * b + "  ");
-                    b ++;                  
+                    b ++;
                 }
 
-                /*Console.WriteLine();
-                a ++; */
-
-
-
-            }
+                Console.WriteLine(" ");
+                ++ a;
+                Console.Write(a);
             
+            }
+
             
 
 
@@ -158,6 +171,7 @@ namespace Day3
         {
             Console.WriteLine("ievadi uzdevuma nr.");
             string inp = Console.ReadLine();
+            Console.WriteLine("--------------------");
 
             switch (inp)
             {

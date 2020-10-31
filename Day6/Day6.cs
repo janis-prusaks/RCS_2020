@@ -1,44 +1,34 @@
 ﻿using System;
 
-namespace Day5
+namespace Day6
 {
-    class Program
+    class Day6
     {
-
-
-
-
-
-
-
-
-
         static void Main(string[] args)
         {
             Console.WriteLine("ievadi uzdevuma nr.");
             string inp = Console.ReadLine();
+            Console.WriteLine("--------------------");
 
             switch (inp)
             {
                 case "1":
-                    Task3_1();
+                    Task1.MultipleGreetings();
                     break;
 
                 case "2":
-                    Task3_2();
+                    Task2.PrintMyName("janis", "prusaks");                        ;
                     break;
 
                 case "3":
-                    Task3_3();
+                    Task3.PrintNameSurname();
                     break;
-
-                case "4":
-                    Task3_4();
-                    break;
-
+                
                 default:
                     Console.WriteLine("Nr. neatbilst uzdevumu skaitam.");
                     break;
             }
+        }
+
     }
 }

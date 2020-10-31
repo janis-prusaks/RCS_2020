@@ -69,7 +69,8 @@ namespace Day2
         }
 
         static void Task2_3(int augstums_cm, int diam_cm, bool sudrabegle)
-        {
+        {            
+            
             if (sudrabegle == true)
             {
                 Console.WriteLine("Kamīnzāle");
@@ -140,6 +141,7 @@ namespace Day2
         {
             Console.WriteLine("ievadi uzdevuma nr.");
             string inp = Console.ReadLine();
+            Console.WriteLine("--------------------");
 
             switch (inp)
             {

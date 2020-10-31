@@ -57,6 +57,8 @@ namespace Day1_N
 
             Console.Write("Ievadi uzdevuma nr. :");
             string inp = Console.ReadLine();
+            Console.WriteLine("--------------------");
+
             switch (inp)
             {
                 case "1":
