@@ -124,9 +124,7 @@ namespace Day3
 
         static void Task3_9()
         {
-            // nav pabeigts
-
-
+            
             Console.WriteLine("Reizrēķina tabulai ievadi pozitīvu skaitli, ne lielāku par 20");
             int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("--------------------");
@@ -140,7 +138,7 @@ namespace Day3
             }
             int a = 1;
             int b = 1;
-            while ( a < x)
+            while ( a <= x)
             {
                              
                 while ( b <= x )
@@ -150,13 +148,14 @@ namespace Day3
                 }
 
                 Console.WriteLine(" ");
-                ++ a;
-                Console.Write(a);
+                
+                b = 1;
+                a++;
             
             }
 
-            
-
+            Console.WriteLine(" ");
+            Console.WriteLine("--------------------");
 
         }    
         
