@@ -36,10 +36,15 @@ namespace Day7_Tasks
                 case "4":
                     string[] arrayNames = {"Jānis", "", "Pēteris", "Antons", "", "Andris"};
                     Task3.PrintArrayValues(arrayNames);
-                    Task4.GetNonEmtyArray(arrayNames);
+                    //Task4.GetNonEmtyArray(arrayNames);
                     Task3.PrintArrayValues(arrayNames);
 
-                    
+                    break;
+
+                case "5":                   
+                    Console.WriteLine(Task5.CalculateSum(5, 4));
+                    Console.WriteLine(Task5.CalculateSum(1, 3));
+
                     break;
 
                 default:
