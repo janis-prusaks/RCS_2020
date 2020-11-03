@@ -13,7 +13,7 @@ namespace Day6
             
         }
 
-        public static void PrintNameSurname()
+        public static void PrintNameSurname()// te bija domāts parametrs
         {
             Console.WriteLine(GetNameSurname());
         }
