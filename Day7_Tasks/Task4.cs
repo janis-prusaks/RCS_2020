@@ -9,11 +9,18 @@ namespace Day7_Tasks
     {
         public static string [] GetNonEmtyArray (string[] array)
         {
-            List<string> newArray = new List<string> ();
-            
+            List<string> list = new List<string>();
+            foreach (string item in array)
+            {
+                if (!String.IsNullOrEmpty(item))
+                {
+                    list.Add(item);
+                }
+            }
+            return list.ToArray();
 
+            //return array.Where(item => !String.IsNullOrEmpty(item).ToArray();
             
-
         }
     }
 }

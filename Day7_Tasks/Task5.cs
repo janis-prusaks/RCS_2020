@@ -8,8 +8,7 @@ namespace Day7_Tasks
     {
         public static int CalculateSum(int x, int y)
         {
-            int sum = x + y;
-            return sum;
+            return x + y;
         }
 
 

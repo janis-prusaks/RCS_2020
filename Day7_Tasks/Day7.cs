@@ -12,7 +12,8 @@ namespace Day7_Tasks
 
             switch (inp)
             {
-                case "1":                    
+                case "1":
+                    //Te vajadzētu izsaukt TicTacToe.Program. kautkas nedarbojas. Varbūt pārsaukšanas dēļ.
                     Console.WriteLine("skat. prog. TicTacToe");
                     Console.WriteLine("--------------------");
                     break;
@@ -36,7 +37,7 @@ namespace Day7_Tasks
                 case "4":
                     string[] arrayNames = {"Jānis", "", "Pēteris", "Antons", "", "Andris"};
                     Task3.PrintArrayValues(arrayNames);
-                    //Task4.GetNonEmtyArray(arrayNames);
+                    arrayNames = Task4.GetNonEmtyArray(arrayNames);
                     Task3.PrintArrayValues(arrayNames);
 
                     break;
@@ -45,6 +46,15 @@ namespace Day7_Tasks
                     Console.WriteLine(Task5.CalculateSum(5, 4));
                     Console.WriteLine(Task5.CalculateSum(1, 3));
 
+                    break;
+
+                case "6":
+                    Console.WriteLine("Personas kods: ");
+                    string personald = Console.ReadLine();
+                    if (Task6.ValidatePersonId(personald))
+                    {                        
+                        Task6.PrintBirthday(personald);
+                    }                              
                     break;
 
                 default:
