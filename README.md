@@ -1,4 +1,6 @@
 # RCS_2020
+Riga Coding School C# uzdevumi, nav laboti pēc nodošanas.
+
 Day9
 2.uzdevums.
 Nemācēju salīdzināt 2 List,
